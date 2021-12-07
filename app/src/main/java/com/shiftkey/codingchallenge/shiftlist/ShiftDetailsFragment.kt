@@ -8,9 +8,5 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ShiftDetailsFragment : Fragment(R.layout.shift_details_fragment) {
 
-    companion object {
-        fun newInstance() = ShiftDetailsFragment()
-    }
-
     private val viewModel: ShiftDetailsViewModel by viewModels()
 }

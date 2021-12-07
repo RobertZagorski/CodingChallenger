@@ -12,6 +12,10 @@
         <action
             android:id="@+id/list_to_details"
             app:destination="@id/details_fragment" />
+        <argument
+            android:name="location"
+            app:argType="string"
+            android:defaultValue="Dallas, TX" />
     </fragment>
 
     <fragment
