@@ -12,4 +12,5 @@ dependencies {
     implementation Dependencies.Kotlin
 
     testImplementation TestDependencies.JUnit
+    testImplementation TestDependencies.Mockito
 }
