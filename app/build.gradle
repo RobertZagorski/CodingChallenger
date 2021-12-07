@@ -1,16 +1,18 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.shiftkey.codingchallenge"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -39,6 +41,9 @@ dependencies {
     implementation Dependencies.MaterialComponents
     implementation Dependencies.AndroidX
     implementation Dependencies.AppCompat
+
+    implementation Dependencies.HiltAndroid
+    kapt Dependencies.HiltCompiler
 
     implementation TestDependencies.JUnit
     implementation TestDependencies.Mockito

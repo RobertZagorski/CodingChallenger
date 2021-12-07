@@ -9,6 +9,7 @@ object Versions {
     const val MockitoVersion = "4.1.0"
     const val AndroidXTestVersion = "1.4.0"
     const val EspressoVersion = "3.4.0"
+    const val HiltVersion = "2.38.1"
 }
 
 object Artifacts {
@@ -22,11 +23,15 @@ object Artifacts {
     const val Mockito = "org.mockito:mockito-core"
     const val AndroidXTest = "androidx.test:core"
     const val Espresso = "androidx.test.espresso:espresso-core"
+    const val HiltAndroid = "com.google.dagger:hilt-android"
+    const val HiltCompiler = "com.google.dagger:hilt-compiler"
 }
 
 object Dependencies {
     const val AndroidX = "${Artifacts.AndroidX}:${Versions.AndroidXCoreVersion}"
     const val AppCompat = "${Artifacts.AppCompat}:${Versions.AndroidAppCompatVersion}"
+    const val HiltAndroid = "${Artifacts.HiltAndroid}:${Versions.HiltVersion}"
+    const val HiltCompiler = "${Artifacts.HiltCompiler}:${Versions.HiltVersion}"
     const val Kotlin = "${Artifacts.Kotlin}:${Versions.KotlinVersion}"
     const val NavigationFragment = "${Artifacts.NavigationFragment}:${Versions.NavigationVersion}"
     const val NavigationUi = "${Artifacts.NavigationUi}:${Versions.NavigationVersion}"
