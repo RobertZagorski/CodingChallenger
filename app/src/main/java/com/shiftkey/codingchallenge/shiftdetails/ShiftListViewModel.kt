@@ -7,4 +7,6 @@ import javax.inject.Inject
 @HiltViewModel
 class ShiftListViewModel
 @Inject constructor() : ViewModel() {
+
+
 }

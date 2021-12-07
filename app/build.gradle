@@ -36,6 +36,8 @@ android {
 }
 
 dependencies {
+    implementation project(":domain")
+
     implementation Dependencies.Kotlin
     implementation Dependencies.NavigationUi
     implementation Dependencies.NavigationFragment
