@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/list_fragment">
+
+
+    <fragment
+        android:id="@+id/list_fragment"
+        android:name="com.shiftkey.codingchallenge.shiftdetails.ShiftListFragment"
+        android:layout="@layout/shift_list_fragment">
+        <action
+            android:id="@+id/list_to_details"
+            app:destination="@id/details_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details_fragment"
+        android:name="com.shiftkey.codingchallenge.shiftlist.ShiftDetailsFragment"
+        android:layout="@layout/shift_details_fragment" />
+
+
+</navigation>
