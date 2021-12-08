@@ -7,11 +7,11 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
-import org.mockito.Mockito.`when`
-import org.mockito.Mockito.any
-import org.mockito.Mockito.argThat
-import org.mockito.Mockito.verify
 import org.mockito.junit.MockitoJUnitRunner
+import org.mockito.kotlin.any
+import org.mockito.kotlin.argThat
+import org.mockito.kotlin.verify
+import org.mockito.kotlin.whenever
 
 @RunWith(MockitoJUnitRunner::class)
 class GetAvailableShiftListUseCaseTest {
@@ -24,7 +24,8 @@ class GetAvailableShiftListUseCaseTest {
     @Test
     fun `Should load the shifts based on start time and location`() {
         // given
-        `when`(repository.getShifts(any())).thenReturn(emptyList())
+        whenever(repository.getShifts(any()))
+            .thenReturn(emptyList())
         val params = GetAvailableShiftListUseCase.Params(
             location = LOCATION,
             start = ShiftkeyTime(START_TIME)
@@ -34,10 +35,10 @@ class GetAvailableShiftListUseCaseTest {
 
         // then
         verify(repository).getShifts(argThat {
-            it.address == LOCATION &&
-                it.start.timestamp == START_TIME &&
-                it.radius == RADIUS &&
-                it.type == WorkWeek.WEEK
+            address == LOCATION &&
+                start.timestamp == START_TIME &&
+                radius == RADIUS &&
+                type == WorkWeek.WEEK
         })
         assertTrue(result.isEmpty())
     }

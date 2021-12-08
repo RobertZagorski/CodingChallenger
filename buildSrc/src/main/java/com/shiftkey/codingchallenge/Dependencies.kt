@@ -7,6 +7,7 @@ object Versions {
 
     const val JUnitVersion = "4.13.2"
     const val MockitoVersion = "4.1.0"
+    const val MockitoKotlinVersion = "4.0.0"
     const val AndroidXTestVersion = "1.4.0"
     const val EspressoVersion = "3.4.0"
     const val HiltVersion = "2.38.1"
@@ -21,6 +22,7 @@ object Artifacts {
     const val MaterialComponents = "com.google.android.material:material"
     const val JUnit = "junit:junit"
     const val Mockito = "org.mockito:mockito-core"
+    const val MockitoKotlin = "org.mockito.kotlin:mockito-kotlin"
     const val AndroidXTest = "androidx.test:core"
     const val Espresso = "androidx.test.espresso:espresso-core"
     const val HiltAndroid = "com.google.dagger:hilt-android"
@@ -41,6 +43,7 @@ object Dependencies {
 object TestDependencies {
     const val JUnit = "${Artifacts.JUnit}:${Versions.JUnitVersion}"
     const val Mockito = "${Artifacts.Mockito}:${Versions.MockitoVersion}"
+    const val MockitoKotlin = "${Artifacts.MockitoKotlin}:${Versions.MockitoKotlinVersion}"
     const val AndroidXTest = "${Artifacts.AndroidXTest}:${Versions.AndroidXTestVersion}"
     const val Espresso = "${Artifacts.Espresso}:${Versions.EspressoVersion}"
 }

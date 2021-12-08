@@ -1,6 +1,6 @@
 package com.shiftkey.codingchallenge.model
 
-data class AvailableShiftQualification(
+class AvailableShiftQualification(
     val address: String,
     val start: ShiftkeyTime,
     val type: WorkWeek,
