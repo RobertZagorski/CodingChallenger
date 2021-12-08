@@ -11,6 +11,8 @@ object Versions {
     const val AndroidXTestVersion = "1.4.0"
     const val EspressoVersion = "3.4.0"
     const val HiltVersion = "2.38.1"
+    const val RetrofitVersion = "2.9.0"
+    const val RxJava3 = "3.1.3"
 }
 
 object Artifacts {
@@ -20,13 +22,21 @@ object Artifacts {
     const val NavigationFragment = "androidx.navigation:navigation-fragment-ktx"
     const val NavigationUi = "androidx.navigation:navigation-ui-ktx"
     const val MaterialComponents = "com.google.android.material:material"
+
     const val JUnit = "junit:junit"
     const val Mockito = "org.mockito:mockito-core"
     const val MockitoKotlin = "org.mockito.kotlin:mockito-kotlin"
     const val AndroidXTest = "androidx.test:core"
     const val Espresso = "androidx.test.espresso:espresso-core"
+
     const val HiltAndroid = "com.google.dagger:hilt-android"
     const val HiltCompiler = "com.google.dagger:hilt-compiler"
+
+    const val RxJava3 = "io.reactivex.rxjava3:rxjava"
+
+    const val Retrofit = "com.squareup.retrofit2:retrofit"
+    const val Rxjava3Retrofit2CallAdapter = "com.squareup.retrofit2:adapter-rxjava3"
+    const val GsonConverter = "com.squareup.retrofit2:converter-gson"
 }
 
 object Dependencies {
@@ -38,6 +48,10 @@ object Dependencies {
     const val NavigationFragment = "${Artifacts.NavigationFragment}:${Versions.NavigationVersion}"
     const val NavigationUi = "${Artifacts.NavigationUi}:${Versions.NavigationVersion}"
     const val MaterialComponents = "${Artifacts.MaterialComponents}:${Versions.MaterialComponentsVersion}"
+    const val Retrofit = "${Artifacts.Retrofit}:${Versions.RetrofitVersion}"
+    const val RxJava3 = "${Artifacts.RxJava3}:${Versions.RxJava3}"
+    const val RxJava3Retrofit2CallAdapter = "${Artifacts.Rxjava3Retrofit2CallAdapter}:${Versions.RetrofitVersion}"
+    const val GsonConverter = "${Artifacts.GsonConverter}:${Versions.RetrofitVersion}"
 }
 
 object TestDependencies {

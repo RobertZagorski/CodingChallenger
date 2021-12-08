@@ -10,8 +10,10 @@ java {
 
 dependencies {
     implementation Dependencies.Kotlin
+    implementation Dependencies.RxJava3
 
     testImplementation TestDependencies.JUnit
     testImplementation TestDependencies.Mockito
     testImplementation TestDependencies.MockitoKotlin
+
 }

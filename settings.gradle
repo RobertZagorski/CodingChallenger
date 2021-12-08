@@ -1,3 +1,5 @@
+include ':core'
+include ':data'
 include ':domain'
 include ':app'
 rootProject.name = "Coding Challenge"
